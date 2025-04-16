@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Étudiants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Ajouter un étudiant</h2>
+
+    <form id="formulaire" method="POST">
+        <input type="hidden" name="id" id="id">
+        <input type="text" name="nomuser" id="nomuser" placeholder="Nom" required>
+        <input type="text" name="prenomuser" id="prenomuser" placeholder="Prénom" required>
+        <input type="email" name="emailuser" id="emailuser" placeholder="Email" required>
+        <input type="number" name="age" id="age" placeholder="Âge" required>
+        <button type="submit" id="btnSubmit">Ajouter</button>
+    </form>
+
+    <h3>Liste des étudiants :</h3>
+    <table id="studentTable" border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+                <th>Âge</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
